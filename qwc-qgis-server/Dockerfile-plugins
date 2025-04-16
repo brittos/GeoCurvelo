@@ -1,0 +1,4 @@
+ARG QGIS_VERSION=3.40.3
+FROM sourcepole/qwc-qgis-server:$QGIS_VERSION
+
+COPY plugins/ /usr/share/qgis/python/plugins/
