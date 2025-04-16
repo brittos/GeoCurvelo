@@ -1,0 +1,5 @@
+docker-compose.yml
+api-gateway/nginx.conf
+.env
+volumes/config/__capabilities_cache
+pg_service.conf
