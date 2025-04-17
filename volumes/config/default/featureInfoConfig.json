@@ -15,6 +15,472 @@
           "title": "QWC Demo",
           "layers": [
             {
+              "name": "Cadastro",
+              "title": "Cadastro",
+              "layers": [
+                {
+                  "name": "inscricao_cadastral",
+                  "title": "Inscrição Cadastral",
+                  "attributes": [
+                    {
+                      "name": "ID"
+                    },
+                    {
+                      "name": "inscricao"
+                    },
+                    {
+                      "name": "codigo_imov"
+                    },
+                    {
+                      "name": "cod_proprie"
+                    },
+                    {
+                      "name": "proprietari"
+                    },
+                    {
+                      "name": "cod_trclog"
+                    },
+                    {
+                      "name": "cd_logradou"
+                    },
+                    {
+                      "name": "log_nome"
+                    },
+                    {
+                      "name": "numero_imov"
+                    },
+                    {
+                      "name": "emplacament"
+                    },
+                    {
+                      "name": "complemento"
+                    },
+                    {
+                      "name": "quadra"
+                    },
+                    {
+                      "name": "lote"
+                    },
+                    {
+                      "name": "edificio"
+                    },
+                    {
+                      "name": "bloco"
+                    },
+                    {
+                      "name": "andar"
+                    },
+                    {
+                      "name": "apto"
+                    },
+                    {
+                      "name": "cep_imovel"
+                    },
+                    {
+                      "name": "cod_bairro"
+                    },
+                    {
+                      "name": "bairro_imov"
+                    },
+                    {
+                      "name": "zona"
+                    },
+                    {
+                      "name": "setor"
+                    },
+                    {
+                      "name": "distrito"
+                    },
+                    {
+                      "name": "loteamento"
+                    },
+                    {
+                      "name": "cod_zoneame"
+                    },
+                    {
+                      "name": "cod_zonea01"
+                    },
+                    {
+                      "name": "sigla"
+                    },
+                    {
+                      "name": "descricao"
+                    },
+                    {
+                      "name": "cod_comprom"
+                    },
+                    {
+                      "name": "compromissa"
+                    },
+                    {
+                      "name": "cpf_cnpj"
+                    },
+                    {
+                      "name": "rg"
+                    },
+                    {
+                      "name": "aposentado"
+                    },
+                    {
+                      "name": "email"
+                    },
+                    {
+                      "name": "end_prop_lo"
+                    },
+                    {
+                      "name": "end_prop_nu"
+                    },
+                    {
+                      "name": "end_prop_co"
+                    },
+                    {
+                      "name": "end_prop_ed"
+                    },
+                    {
+                      "name": "end_prop_bl"
+                    },
+                    {
+                      "name": "end_prop_an"
+                    },
+                    {
+                      "name": "end_prop_ap"
+                    },
+                    {
+                      "name": "end_prop_ba"
+                    },
+                    {
+                      "name": "end_prop_ce"
+                    },
+                    {
+                      "name": "end_prop_ci"
+                    },
+                    {
+                      "name": "end_prop_uf"
+                    },
+                    {
+                      "name": "secao"
+                    },
+                    {
+                      "name": "lado"
+                    },
+                    {
+                      "name": "isento_iptu"
+                    },
+                    {
+                      "name": "possui_habi"
+                    },
+                    {
+                      "name": "possui_escr"
+                    },
+                    {
+                      "name": "sobrado"
+                    },
+                    {
+                      "name": "qtde_constr"
+                    },
+                    {
+                      "name": "utilizacao"
+                    },
+                    {
+                      "name": "propriedade"
+                    },
+                    {
+                      "name": "classificac"
+                    },
+                    {
+                      "name": "qtde_pavime"
+                    },
+                    {
+                      "name": "pedologia"
+                    },
+                    {
+                      "name": "topografia"
+                    },
+                    {
+                      "name": "pavimentaca"
+                    },
+                    {
+                      "name": "agua"
+                    },
+                    {
+                      "name": "luz"
+                    },
+                    {
+                      "name": "esgoto"
+                    },
+                    {
+                      "name": "viela_sanit"
+                    },
+                    {
+                      "name": "guia"
+                    },
+                    {
+                      "name": "sarjeta"
+                    },
+                    {
+                      "name": "calcada"
+                    },
+                    {
+                      "name": "geminada"
+                    },
+                    {
+                      "name": "muro"
+                    },
+                    {
+                      "name": "situacao_lo"
+                    },
+                    {
+                      "name": "ano_constru"
+                    },
+                    {
+                      "name": "formato"
+                    },
+                    {
+                      "name": "tp_red_arbo"
+                    },
+                    {
+                      "name": "tp_red_app"
+                    },
+                    {
+                      "name": "tp_red_ared"
+                    },
+                    {
+                      "name": "conservacao"
+                    },
+                    {
+                      "name": "acabamento_"
+                    },
+                    {
+                      "name": "esquadrias_"
+                    },
+                    {
+                      "name": "revestiment"
+                    },
+                    {
+                      "name": "revestime01"
+                    },
+                    {
+                      "name": "fachada_edf"
+                    },
+                    {
+                      "name": "piso_edf"
+                    },
+                    {
+                      "name": "cobertura_e"
+                    },
+                    {
+                      "name": "forro_edf"
+                    },
+                    {
+                      "name": "estrutura_e"
+                    },
+                    {
+                      "name": "posicao_edf"
+                    },
+                    {
+                      "name": "alinhamento"
+                    },
+                    {
+                      "name": "localizacao"
+                    },
+                    {
+                      "name": "instalacao_"
+                    },
+                    {
+                      "name": "instalaca01"
+                    },
+                    {
+                      "name": "especie_edf"
+                    },
+                    {
+                      "name": "sublote"
+                    },
+                    {
+                      "name": "em_construc"
+                    },
+                    {
+                      "name": "taxa_ocupac"
+                    },
+                    {
+                      "name": "indice_apro"
+                    },
+                    {
+                      "name": "taxa_imperm"
+                    },
+                    {
+                      "name": "foto_ocupac"
+                    },
+                    {
+                      "name": "foto_tipo_e"
+                    },
+                    {
+                      "name": "foto_constr"
+                    },
+                    {
+                      "name": "foto_guia"
+                    },
+                    {
+                      "name": "foto_calcad"
+                    },
+                    {
+                      "name": "foto_pavime"
+                    },
+                    {
+                      "name": "foto_gemina"
+                    },
+                    {
+                      "name": "foto_muro"
+                    },
+                    {
+                      "name": "foto_grade"
+                    },
+                    {
+                      "name": "foto_cerca"
+                    },
+                    {
+                      "name": "foto_classi"
+                    },
+                    {
+                      "name": "foto_comple"
+                    },
+                    {
+                      "name": "qtde_testad"
+                    },
+                    {
+                      "name": "testada_pri"
+                    },
+                    {
+                      "name": "testada2"
+                    },
+                    {
+                      "name": "testada3"
+                    },
+                    {
+                      "name": "testada4"
+                    },
+                    {
+                      "name": "profundidad"
+                    },
+                    {
+                      "name": "area_terren"
+                    },
+                    {
+                      "name": "area_terr01"
+                    },
+                    {
+                      "name": "area_edif_p"
+                    },
+                    {
+                      "name": "area_edif_g"
+                    },
+                    {
+                      "name": "area_edif_d"
+                    },
+                    {
+                      "name": "area_edif01"
+                    },
+                    {
+                      "name": "area_total_"
+                    },
+                    {
+                      "name": "area_tota01"
+                    },
+                    {
+                      "name": "area_tota02"
+                    },
+                    {
+                      "name": "fracao_idea"
+                    },
+                    {
+                      "name": "valor_venal"
+                    },
+                    {
+                      "name": "valor_ven01"
+                    },
+                    {
+                      "name": "categoria_v"
+                    },
+                    {
+                      "name": "categoria01"
+                    },
+                    {
+                      "name": "valor_metro"
+                    },
+                    {
+                      "name": "valor_met01"
+                    },
+                    {
+                      "name": "aliquota_ip"
+                    },
+                    {
+                      "name": "aliquota_01"
+                    },
+                    {
+                      "name": "desconto_ip"
+                    },
+                    {
+                      "name": "acrescimo_i"
+                    },
+                    {
+                      "name": "valor_pago_"
+                    },
+                    {
+                      "name": "qtde_pontos"
+                    },
+                    {
+                      "name": "ano_inicio_"
+                    },
+                    {
+                      "name": "cod_lotef"
+                    },
+                    {
+                      "name": "uid_lote_ge"
+                    },
+                    {
+                      "name": "insc_cad"
+                    },
+                    {
+                      "name": "insc_cad_fo"
+                    },
+                    {
+                      "name": "insc_cad_pa"
+                    },
+                    {
+                      "name": "insc_cad_qu"
+                    },
+                    {
+                      "name": "insc_cad_lo"
+                    },
+                    {
+                      "name": "insc_cad_un"
+                    },
+                    {
+                      "name": "data_cadast"
+                    },
+                    {
+                      "name": "data_cada01"
+                    },
+                    {
+                      "name": "cadastrado"
+                    },
+                    {
+                      "name": "ativo"
+                    },
+                    {
+                      "name": "observacoes"
+                    },
+                    {
+                      "name": "geometry"
+                    },
+                    {
+                      "name": "maptip"
+                    }
+                  ],
+                  "display_field": "inscricao"
+                }
+              ]
+            },
+            {
               "name": "edit_demo",
               "title": "Edit Demo",
               "layers": [

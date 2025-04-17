@@ -2,7 +2,7 @@
   "$schema": "https://github.com/qwc-services/qwc-fulltext-search-service/raw/master/schemas/qwc-search-service.json",
   "service": "search",
   "config": {
-    "db_url": "postgresql:///?service=qwc_geodb",
+    "db_url": "postgresql:///?service=GeoCurvelo",
     "search_backend": "solr",
     "search_result_limit": 50,
     "solr_service_url": "http://qwc-solr:8983/solr/gdi/select"

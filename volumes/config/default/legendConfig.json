@@ -13,6 +13,14 @@
           "name": "qwc_demo",
           "layers": [
             {
+              "name": "Cadastro",
+              "layers": [
+                {
+                  "name": "inscricao_cadastral"
+                }
+              ]
+            },
+            {
               "name": "edit_demo",
               "layers": [
                 {

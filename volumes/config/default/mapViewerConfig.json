@@ -307,16 +307,16 @@
                 ],
                 "colorSchemes": [
                   {
+                    "titleMsgId": "colorschemes.dark",
+                    "value": "dark"
+                  },
+                  {
                     "titleMsgId": "colorschemes.default",
                     "value": "default"
                   },
                   {
                     "titleMsgId": "colorschemes.highcontrast",
                     "value": "highcontrast"
-                  },
-                  {
-                    "titleMsgId": "colorschemes.dark",
-                    "value": "dark"
                   }
                 ]
               }
@@ -593,6 +593,43 @@
             },
             "sublayers": [
               {
+                "name": "Cadastro",
+                "title": "Cadastro",
+                "sublayers": [
+                  {
+                    "name": "inscricao_cadastral",
+                    "title": "Inscrição Cadastral",
+                    "visibility": true,
+                    "geometryType": "Point",
+                    "category_sublayer": false,
+                    "queryable": true,
+                    "styles": {
+                      "padrão": "padrão"
+                    },
+                    "style": "padrão",
+                    "displayField": "inscricao",
+                    "opacity": 255,
+                    "bbox": {
+                      "crs": "EPSG:4326",
+                      "bounds": [
+                        -44.657988,
+                        -19.159744,
+                        -44.151456,
+                        -18.436364
+                      ]
+                    },
+                    "dimensions": [],
+                    "attribution": {
+                      "Title": null,
+                      "OnlineResource": null
+                    }
+                  }
+                ],
+                "expanded": true,
+                "mutuallyExclusive": false,
+                "visibility": true
+              },
+              {
                 "name": "edit_demo",
                 "title": "Edit Demo",
                 "sublayers": [
@@ -813,7 +850,8 @@
               "geographic_lines",
               "edit_polygons",
               "edit_lines",
-              "edit_points"
+              "edit_points",
+              "inscricao_cadastral"
             ],
             "externalLayers": [],
             "backgroundLayers": [
@@ -872,7 +910,4289 @@
                 }
               }
             ],
-            "editConfig": {},
+            "editConfig": {
+              "edit_lines": {
+                "layerName": "edit_lines",
+                "displayField": "name",
+                "editDataset": "pg/qgisprojects/qwc_demo.edit_lines",
+                "geomType": "LineString",
+                "form": ":/forms/autogen/qwc_demo_edit_lines.ui?v=1744891867",
+                "fields": [
+                  {
+                    "id": "id",
+                    "name": "id",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "readOnly": true,
+                      "expression": "",
+                      "hidden": true
+                    }
+                  },
+                  {
+                    "id": "name",
+                    "name": "Name",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 32,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "description",
+                    "name": "Description",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": true
+                    }
+                  },
+                  {
+                    "id": "num",
+                    "name": "Number",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": 0,
+                      "max": 10000,
+                      "required": false,
+                      "expression": "",
+                      "step": 1,
+                      "prec": 0
+                    }
+                  },
+                  {
+                    "id": "value",
+                    "name": "value",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "type",
+                    "name": "Type",
+                    "type": "list",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -32768,
+                      "max": 32767,
+                      "required": false,
+                      "expression": "",
+                      "values": [
+                        {
+                          "label": "Type A",
+                          "value": "0"
+                        },
+                        {
+                          "label": "Type B",
+                          "value": "1"
+                        },
+                        {
+                          "label": "Type C",
+                          "value": "2"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "amount",
+                    "name": "amount",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "numeric_precision": 5,
+                      "numeric_scale": 2,
+                      "min": -999.99,
+                      "max": 999.99,
+                      "step": 0.01,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "validated",
+                    "name": "Validated",
+                    "type": "boolean",
+                    "data_type": "boolean",
+                    "constraints": {
+                      "required": false,
+                      "expression": ""
+                    }
+                  },
+                  {
+                    "id": "datetime",
+                    "name": "Date",
+                    "type": "date",
+                    "data_type": "date",
+                    "constraints": {
+                      "required": false,
+                      "expression": ""
+                    }
+                  }
+                ]
+              },
+              "edit_points": {
+                "layerName": "edit_points",
+                "displayField": "name",
+                "editDataset": "pg/qgisprojects/qwc_demo.edit_points",
+                "geomType": "Point",
+                "form": ":/forms/autogen/qwc_demo_edit_points.ui?v=1744891867",
+                "fields": [
+                  {
+                    "id": "id",
+                    "name": "id",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "readOnly": true,
+                      "expression": "",
+                      "hidden": true
+                    }
+                  },
+                  {
+                    "id": "name",
+                    "name": "Name",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 32,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "description",
+                    "name": "Description",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": true
+                    }
+                  },
+                  {
+                    "id": "num",
+                    "name": "Number",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": 0,
+                      "max": 10000,
+                      "required": false,
+                      "expression": "",
+                      "step": 1,
+                      "prec": 0
+                    }
+                  },
+                  {
+                    "id": "value",
+                    "name": "value",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "type",
+                    "name": "Type",
+                    "type": "list",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -32768,
+                      "max": 32767,
+                      "required": false,
+                      "expression": "",
+                      "values": [
+                        {
+                          "label": "Type A",
+                          "value": "0"
+                        },
+                        {
+                          "label": "Type B",
+                          "value": "1"
+                        },
+                        {
+                          "label": "Type C",
+                          "value": "2"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "amount",
+                    "name": "amount",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "numeric_precision": 5,
+                      "numeric_scale": 2,
+                      "min": -999.99,
+                      "max": 999.99,
+                      "step": 0.01,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "validated",
+                    "name": "Validated",
+                    "type": "boolean",
+                    "data_type": "boolean",
+                    "constraints": {
+                      "required": false,
+                      "expression": ""
+                    }
+                  },
+                  {
+                    "id": "datetime",
+                    "name": "Date",
+                    "type": "date",
+                    "data_type": "date",
+                    "constraints": {
+                      "required": false,
+                      "expression": ""
+                    }
+                  }
+                ]
+              },
+              "edit_polygons": {
+                "layerName": "edit_polygons",
+                "displayField": "name",
+                "editDataset": "pg/qgisprojects/qwc_demo.edit_polygons",
+                "geomType": "Polygon",
+                "form": ":/forms/autogen/qwc_demo_edit_polygons.ui?v=1744891867",
+                "fields": [
+                  {
+                    "id": "id",
+                    "name": "id",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "readOnly": true,
+                      "expression": "",
+                      "hidden": true
+                    }
+                  },
+                  {
+                    "id": "name",
+                    "name": "Name",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 32,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "description",
+                    "name": "Description",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": true
+                    }
+                  },
+                  {
+                    "id": "num",
+                    "name": "Number",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": 0,
+                      "max": 10000,
+                      "required": false,
+                      "expression": "",
+                      "step": 1,
+                      "prec": 0
+                    }
+                  },
+                  {
+                    "id": "value",
+                    "name": "value",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "type",
+                    "name": "Type",
+                    "type": "list",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -32768,
+                      "max": 32767,
+                      "required": false,
+                      "expression": "",
+                      "values": [
+                        {
+                          "label": "Type A",
+                          "value": "0"
+                        },
+                        {
+                          "label": "Type B",
+                          "value": "1"
+                        },
+                        {
+                          "label": "Type C",
+                          "value": "2"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "amount",
+                    "name": "amount",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "numeric_precision": 5,
+                      "numeric_scale": 2,
+                      "min": -999.99,
+                      "max": 999.99,
+                      "step": 0.01,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "validated",
+                    "name": "Validated",
+                    "type": "boolean",
+                    "data_type": "boolean",
+                    "constraints": {
+                      "required": false,
+                      "expression": ""
+                    }
+                  },
+                  {
+                    "id": "datetime",
+                    "name": "Date",
+                    "type": "date",
+                    "data_type": "date",
+                    "constraints": {
+                      "required": false,
+                      "expression": ""
+                    }
+                  }
+                ]
+              },
+              "inscricao_cadastral": {
+                "layerName": "inscricao_cadastral",
+                "displayField": "inscricao",
+                "editDataset": "pg/qgisprojects/qwc_demo.inscricao_cadastral",
+                "geomType": "Point",
+                "form": ":/forms/autogen/qwc_demo_inscricao_cadastral.ui?v=1744891867",
+                "fields": [
+                  {
+                    "id": "id",
+                    "name": "ID",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": true,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "inscricao",
+                    "name": "inscricao",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 30,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "codigo_imov",
+                    "name": "codigo_imov",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 30,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "cod_proprie",
+                    "name": "cod_proprie",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "proprietari",
+                    "name": "proprietari",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 150,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "cod_trclog",
+                    "name": "cod_trclog",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "cd_logradou",
+                    "name": "cd_logradou",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "log_nome",
+                    "name": "log_nome",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 150,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "numero_imov",
+                    "name": "numero_imov",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 20,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "emplacament",
+                    "name": "emplacament",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "complemento",
+                    "name": "complemento",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 100,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "quadra",
+                    "name": "quadra",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 10,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "lote",
+                    "name": "lote",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 10,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "edificio",
+                    "name": "edificio",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 100,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "bloco",
+                    "name": "bloco",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "andar",
+                    "name": "andar",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 20,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "apto",
+                    "name": "apto",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 10,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "cep_imovel",
+                    "name": "cep_imovel",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 10,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "cod_bairro",
+                    "name": "cod_bairro",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "bairro_imov",
+                    "name": "bairro_imov",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 150,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "zona",
+                    "name": "zona",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 150,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "setor",
+                    "name": "setor",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 150,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "distrito",
+                    "name": "distrito",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 150,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "loteamento",
+                    "name": "loteamento",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 150,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "cod_zoneame",
+                    "name": "cod_zoneame",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "cod_zonea01",
+                    "name": "cod_zonea01",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "sigla",
+                    "name": "sigla",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 10,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "descricao",
+                    "name": "descricao",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 100,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "cod_comprom",
+                    "name": "cod_comprom",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "compromissa",
+                    "name": "compromissa",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 150,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "cpf_cnpj",
+                    "name": "cpf_cnpj",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 30,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "rg",
+                    "name": "rg",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 30,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "aposentado",
+                    "name": "aposentado",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "email",
+                    "name": "email",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 150,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "end_prop_lo",
+                    "name": "end_prop_lo",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 150,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "end_prop_nu",
+                    "name": "end_prop_nu",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 20,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "end_prop_co",
+                    "name": "end_prop_co",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 100,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "end_prop_ed",
+                    "name": "end_prop_ed",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 100,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "end_prop_bl",
+                    "name": "end_prop_bl",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "end_prop_an",
+                    "name": "end_prop_an",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 20,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "end_prop_ap",
+                    "name": "end_prop_ap",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 10,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "end_prop_ba",
+                    "name": "end_prop_ba",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 150,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "end_prop_ce",
+                    "name": "end_prop_ce",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 10,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "end_prop_ci",
+                    "name": "end_prop_ci",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 100,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "end_prop_uf",
+                    "name": "end_prop_uf",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 2,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "secao",
+                    "name": "secao",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 10,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "lado",
+                    "name": "lado",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 10,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "isento_iptu",
+                    "name": "isento_iptu",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "possui_habi",
+                    "name": "possui_habi",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "possui_escr",
+                    "name": "possui_escr",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "sobrado",
+                    "name": "sobrado",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "qtde_constr",
+                    "name": "qtde_constr",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "utilizacao",
+                    "name": "utilizacao",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "propriedade",
+                    "name": "propriedade",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "classificac",
+                    "name": "classificac",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "qtde_pavime",
+                    "name": "qtde_pavime",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "pedologia",
+                    "name": "pedologia",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "topografia",
+                    "name": "topografia",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "pavimentaca",
+                    "name": "pavimentaca",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "agua",
+                    "name": "agua",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "luz",
+                    "name": "luz",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "esgoto",
+                    "name": "esgoto",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "viela_sanit",
+                    "name": "viela_sanit",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "guia",
+                    "name": "guia",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "sarjeta",
+                    "name": "sarjeta",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "calcada",
+                    "name": "calcada",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "geminada",
+                    "name": "geminada",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "muro",
+                    "name": "muro",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "situacao_lo",
+                    "name": "situacao_lo",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "ano_constru",
+                    "name": "ano_constru",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "formato",
+                    "name": "formato",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "tp_red_arbo",
+                    "name": "tp_red_arbo",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "tp_red_app",
+                    "name": "tp_red_app",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "tp_red_ared",
+                    "name": "tp_red_ared",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "conservacao",
+                    "name": "conservacao",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "acabamento_",
+                    "name": "acabamento_",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "esquadrias_",
+                    "name": "esquadrias_",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "revestiment",
+                    "name": "revestiment",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "revestime01",
+                    "name": "revestime01",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "fachada_edf",
+                    "name": "fachada_edf",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "piso_edf",
+                    "name": "piso_edf",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "cobertura_e",
+                    "name": "cobertura_e",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "forro_edf",
+                    "name": "forro_edf",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "estrutura_e",
+                    "name": "estrutura_e",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "posicao_edf",
+                    "name": "posicao_edf",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "alinhamento",
+                    "name": "alinhamento",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "localizacao",
+                    "name": "localizacao",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "instalacao_",
+                    "name": "instalacao_",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "instalaca01",
+                    "name": "instalaca01",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "especie_edf",
+                    "name": "especie_edf",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "sublote",
+                    "name": "sublote",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "em_construc",
+                    "name": "em_construc",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "taxa_ocupac",
+                    "name": "taxa_ocupac",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "indice_apro",
+                    "name": "indice_apro",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "taxa_imperm",
+                    "name": "taxa_imperm",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "foto_ocupac",
+                    "name": "foto_ocupac",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 30,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "foto_tipo_e",
+                    "name": "foto_tipo_e",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 30,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "foto_constr",
+                    "name": "foto_constr",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "foto_guia",
+                    "name": "foto_guia",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "foto_calcad",
+                    "name": "foto_calcad",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "foto_pavime",
+                    "name": "foto_pavime",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 30,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "foto_gemina",
+                    "name": "foto_gemina",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "foto_muro",
+                    "name": "foto_muro",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "foto_grade",
+                    "name": "foto_grade",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "foto_cerca",
+                    "name": "foto_cerca",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "foto_classi",
+                    "name": "foto_classi",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 15,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "foto_comple",
+                    "name": "foto_comple",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 254,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "qtde_testad",
+                    "name": "qtde_testad",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "testada_pri",
+                    "name": "testada_pri",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "testada2",
+                    "name": "testada2",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "testada3",
+                    "name": "testada3",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "testada4",
+                    "name": "testada4",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "profundidad",
+                    "name": "profundidad",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "area_terren",
+                    "name": "area_terren",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "area_terr01",
+                    "name": "area_terr01",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "area_edif_p",
+                    "name": "area_edif_p",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "area_edif_g",
+                    "name": "area_edif_g",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "area_edif_d",
+                    "name": "area_edif_d",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "area_edif01",
+                    "name": "area_edif01",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "area_total_",
+                    "name": "area_total_",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "area_tota01",
+                    "name": "area_tota01",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "area_tota02",
+                    "name": "area_tota02",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "fracao_idea",
+                    "name": "fracao_idea",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "valor_venal",
+                    "name": "valor_venal",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "valor_ven01",
+                    "name": "valor_ven01",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "categoria_v",
+                    "name": "categoria_v",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "categoria01",
+                    "name": "categoria01",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 50,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "valor_metro",
+                    "name": "valor_metro",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "valor_met01",
+                    "name": "valor_met01",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "aliquota_ip",
+                    "name": "aliquota_ip",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "aliquota_01",
+                    "name": "aliquota_01",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "desconto_ip",
+                    "name": "desconto_ip",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "acrescimo_i",
+                    "name": "acrescimo_i",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "valor_pago_",
+                    "name": "valor_pago_",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "qtde_pontos",
+                    "name": "qtde_pontos",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "ano_inicio_",
+                    "name": "ano_inicio_",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "cod_lotef",
+                    "name": "cod_lotef",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "uid_lote_ge",
+                    "name": "uid_lote_ge",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "insc_cad",
+                    "name": "insc_cad",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 30,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "insc_cad_fo",
+                    "name": "insc_cad_fo",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "insc_cad_pa",
+                    "name": "insc_cad_pa",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "insc_cad_qu",
+                    "name": "insc_cad_qu",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "insc_cad_lo",
+                    "name": "insc_cad_lo",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "insc_cad_un",
+                    "name": "insc_cad_un",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "data_cadast",
+                    "name": "data_cadast",
+                    "type": "date",
+                    "data_type": "date",
+                    "constraints": {
+                      "required": false,
+                      "expression": ""
+                    }
+                  },
+                  {
+                    "id": "data_cada01",
+                    "name": "data_cada01",
+                    "type": "date",
+                    "data_type": "date",
+                    "constraints": {
+                      "required": false,
+                      "expression": ""
+                    }
+                  },
+                  {
+                    "id": "cadastrado",
+                    "name": "cadastrado",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "ativo",
+                    "name": "ativo",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 1,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "observacoes",
+                    "name": "observacoes",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 250,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  }
+                ]
+              },
+              "countries": {
+                "layerName": "countries",
+                "displayField": "name",
+                "editDataset": "pg/qgisprojects/qwc_demo.countries",
+                "geomType": "MultiPolygon",
+                "form": ":/forms/autogen/qwc_demo_countries.ui?v=1744891867",
+                "fields": [
+                  {
+                    "id": "ogc_fid",
+                    "name": "ogc_fid",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": true,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "featurecla",
+                    "name": "featurecla",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "scalerank",
+                    "name": "scalerank",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "labelrank",
+                    "name": "labelrank",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "sovereignt",
+                    "name": "sovereignt",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "sov_a3",
+                    "name": "sov_a3",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "adm0_dif",
+                    "name": "adm0_dif",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "level",
+                    "name": "level",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "type",
+                    "name": "type",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "admin",
+                    "name": "admin",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "adm0_a3",
+                    "name": "adm0_a3",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "geou_dif",
+                    "name": "geou_dif",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "geounit",
+                    "name": "geounit",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "gu_a3",
+                    "name": "gu_a3",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "su_dif",
+                    "name": "su_dif",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "subunit",
+                    "name": "subunit",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "su_a3",
+                    "name": "su_a3",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "brk_diff",
+                    "name": "brk_diff",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name",
+                    "name": "name",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_long",
+                    "name": "name_long",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "brk_a3",
+                    "name": "brk_a3",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "brk_name",
+                    "name": "brk_name",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "brk_group",
+                    "name": "brk_group",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "abbrev",
+                    "name": "abbrev",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "postal",
+                    "name": "postal",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "formal_en",
+                    "name": "formal_en",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "formal_fr",
+                    "name": "formal_fr",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_ciawf",
+                    "name": "name_ciawf",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "note_adm0",
+                    "name": "note_adm0",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "note_brk",
+                    "name": "note_brk",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_sort",
+                    "name": "name_sort",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_alt",
+                    "name": "name_alt",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "mapcolor7",
+                    "name": "mapcolor7",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "mapcolor8",
+                    "name": "mapcolor8",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "mapcolor9",
+                    "name": "mapcolor9",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "mapcolor13",
+                    "name": "mapcolor13",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "pop_est",
+                    "name": "pop_est",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "pop_rank",
+                    "name": "pop_rank",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "gdp_md_est",
+                    "name": "gdp_md_est",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "pop_year",
+                    "name": "pop_year",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "lastcensus",
+                    "name": "lastcensus",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "gdp_year",
+                    "name": "gdp_year",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "economy",
+                    "name": "economy",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "income_grp",
+                    "name": "income_grp",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "wikipedia",
+                    "name": "wikipedia",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "fips_10_",
+                    "name": "fips_10_",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "iso_a2",
+                    "name": "iso_a2",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "iso_a3",
+                    "name": "iso_a3",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "iso_a3_eh",
+                    "name": "iso_a3_eh",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "iso_n3",
+                    "name": "iso_n3",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "un_a3",
+                    "name": "un_a3",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "wb_a2",
+                    "name": "wb_a2",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "wb_a3",
+                    "name": "wb_a3",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "woe_id",
+                    "name": "woe_id",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "woe_id_eh",
+                    "name": "woe_id_eh",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "woe_note",
+                    "name": "woe_note",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "adm0_a3_is",
+                    "name": "adm0_a3_is",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "adm0_a3_us",
+                    "name": "adm0_a3_us",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "adm0_a3_un",
+                    "name": "adm0_a3_un",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "adm0_a3_wb",
+                    "name": "adm0_a3_wb",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "continent",
+                    "name": "continent",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "region_un",
+                    "name": "region_un",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "subregion",
+                    "name": "subregion",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "region_wb",
+                    "name": "region_wb",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_len",
+                    "name": "name_len",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "long_len",
+                    "name": "long_len",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "abbrev_len",
+                    "name": "abbrev_len",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "tiny",
+                    "name": "tiny",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "homepart",
+                    "name": "homepart",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "min_zoom",
+                    "name": "min_zoom",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "min_label",
+                    "name": "min_label",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "max_label",
+                    "name": "max_label",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "ne_id",
+                    "name": "ne_id",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "wikidataid",
+                    "name": "wikidataid",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_ar",
+                    "name": "name_ar",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_bn",
+                    "name": "name_bn",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_de",
+                    "name": "name_de",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_en",
+                    "name": "name_en",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_es",
+                    "name": "name_es",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_fr",
+                    "name": "name_fr",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_el",
+                    "name": "name_el",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_hi",
+                    "name": "name_hi",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_hu",
+                    "name": "name_hu",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_id",
+                    "name": "name_id",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_it",
+                    "name": "name_it",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_ja",
+                    "name": "name_ja",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_ko",
+                    "name": "name_ko",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_nl",
+                    "name": "name_nl",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_pl",
+                    "name": "name_pl",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_pt",
+                    "name": "name_pt",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_ru",
+                    "name": "name_ru",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_sv",
+                    "name": "name_sv",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_tr",
+                    "name": "name_tr",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_vi",
+                    "name": "name_vi",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_zh",
+                    "name": "name_zh",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  }
+                ]
+              },
+              "country_names": {
+                "layerName": "country_names",
+                "displayField": "z_name",
+                "editDataset": "pg/qgisprojects/qwc_demo.country_names",
+                "geomType": "Point",
+                "form": ":/forms/autogen/qwc_demo_country_names.ui?v=1744891867",
+                "fields": [
+                  {
+                    "id": "ogc_fid",
+                    "name": "ogc_fid",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": true,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "scalerank",
+                    "name": "scalerank",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "labelrank",
+                    "name": "labelrank",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "z_postal",
+                    "name": "z_postal",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "z_abbrev",
+                    "name": "z_abbrev",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "z_name",
+                    "name": "z_name",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "z_admin",
+                    "name": "z_admin",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "featurecla",
+                    "name": "featurecla",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 30,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "sovereignt",
+                    "name": "sovereignt",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 32,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "sov_a3",
+                    "name": "sov_a3",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 3,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "adm0_dif",
+                    "name": "adm0_dif",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "level",
+                    "name": "level",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "type",
+                    "name": "type",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 17,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "admin",
+                    "name": "admin",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 36,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "adm0_a3",
+                    "name": "adm0_a3",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 3,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "geou_dif",
+                    "name": "geou_dif",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name",
+                    "name": "name",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 26,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "abbrev",
+                    "name": "abbrev",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 13,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "postal",
+                    "name": "postal",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 4,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_forma",
+                    "name": "name_forma",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 53,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "terr_",
+                    "name": "terr_",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 32,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_sort",
+                    "name": "name_sort",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 43,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "map_color",
+                    "name": "map_color",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "pop_est",
+                    "name": "pop_est",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "gdp_md_est",
+                    "name": "gdp_md_est",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "fips_10_",
+                    "name": "fips_10_",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "iso_a2",
+                    "name": "iso_a2",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 3,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "iso_a3",
+                    "name": "iso_a3",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "maxlength": 3,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "iso_n3",
+                    "name": "iso_n3",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  }
+                ]
+              },
+              "states_provinces": {
+                "layerName": "states_provinces",
+                "displayField": "name",
+                "editDataset": "pg/qgisprojects/qwc_demo.states_provinces",
+                "geomType": "MultiLineString",
+                "form": ":/forms/autogen/qwc_demo_states_provinces.ui?v=1744891867",
+                "fields": [
+                  {
+                    "id": "ogc_fid",
+                    "name": "ogc_fid",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": true,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "featurecla",
+                    "name": "featurecla",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name",
+                    "name": "name",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "adm0_a3",
+                    "name": "adm0_a3",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "adm0_name",
+                    "name": "adm0_name",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "shape_leng",
+                    "name": "shape_leng",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "mapcolor13",
+                    "name": "mapcolor13",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "mapcolor9",
+                    "name": "mapcolor9",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "sov_a3",
+                    "name": "sov_a3",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_l",
+                    "name": "name_l",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_r",
+                    "name": "name_r",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_alt_l",
+                    "name": "name_alt_l",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_alt_r",
+                    "name": "name_alt_r",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_loc_l",
+                    "name": "name_loc_l",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_loc_r",
+                    "name": "name_loc_r",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_len_l",
+                    "name": "name_len_l",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_len_r",
+                    "name": "name_len_r",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "note",
+                    "name": "note",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "type",
+                    "name": "type",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "min_zoom",
+                    "name": "min_zoom",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "min_label",
+                    "name": "min_label",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "scalerank",
+                    "name": "scalerank",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  }
+                ]
+              },
+              "geographic_lines": {
+                "layerName": "geographic_lines",
+                "displayField": "name",
+                "editDataset": "pg/qgisprojects/qwc_demo.geographic_lines",
+                "geomType": "MultiLineString",
+                "form": ":/forms/autogen/qwc_demo_geographic_lines.ui?v=1744891868",
+                "fields": [
+                  {
+                    "id": "ogc_fid",
+                    "name": "ogc_fid",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": true,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "scalerank",
+                    "name": "scalerank",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name",
+                    "name": "name",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_long",
+                    "name": "name_long",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "abbrev",
+                    "name": "abbrev",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "note",
+                    "name": "note",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "featurecla",
+                    "name": "featurecla",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "min_zoom",
+                    "name": "min_zoom",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "wikidataid",
+                    "name": "wikidataid",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_ar",
+                    "name": "name_ar",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_bn",
+                    "name": "name_bn",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_de",
+                    "name": "name_de",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_en",
+                    "name": "name_en",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_es",
+                    "name": "name_es",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_fr",
+                    "name": "name_fr",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_el",
+                    "name": "name_el",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_hi",
+                    "name": "name_hi",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_hu",
+                    "name": "name_hu",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_id",
+                    "name": "name_id",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_it",
+                    "name": "name_it",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_ja",
+                    "name": "name_ja",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_ko",
+                    "name": "name_ko",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_nl",
+                    "name": "name_nl",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_pl",
+                    "name": "name_pl",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_pt",
+                    "name": "name_pt",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_ru",
+                    "name": "name_ru",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_sv",
+                    "name": "name_sv",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_tr",
+                    "name": "name_tr",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_vi",
+                    "name": "name_vi",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "name_zh",
+                    "name": "name_zh",
+                    "type": "text",
+                    "data_type": "text",
+                    "constraints": {
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "wdid_score",
+                    "name": "wdid_score",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -2147483648,
+                      "max": 2147483647,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  },
+                  {
+                    "id": "ne_id",
+                    "name": "ne_id",
+                    "type": "number",
+                    "data_type": "number",
+                    "constraints": {
+                      "min": -9223372036854775808,
+                      "max": 9223372036854775807,
+                      "required": false,
+                      "expression": "",
+                      "multiline": false
+                    }
+                  }
+                ]
+              }
+            },
             "predefinedFilters": [
               {
                 "id": "continent_filter",

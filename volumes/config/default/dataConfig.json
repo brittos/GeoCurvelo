@@ -5,6 +5,3990 @@
     "geometry_default_allow_null": false
   },
   "resources": {
-    "datasets": []
+    "datasets": [
+      {
+        "name": "pg/qgisprojects/qwc_demo.countries",
+        "db_url": "postgresql:///?service=qwc_geodb",
+        "schema": "qwc_geodb",
+        "datasource_filter": null,
+        "table_name": "ne_10m_admin_0_countries",
+        "primary_key": "ogc_fid",
+        "fields": [
+          {
+            "name": "ogc_fid",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": true,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "featurecla",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "scalerank",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "labelrank",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "sovereignt",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "sov_a3",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "adm0_dif",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "level",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "type",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "admin",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "adm0_a3",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "geou_dif",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "geounit",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "gu_a3",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "su_dif",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "subunit",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "su_a3",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "brk_diff",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_long",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "brk_a3",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "brk_name",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "brk_group",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "abbrev",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "postal",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "formal_en",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "formal_fr",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_ciawf",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "note_adm0",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "note_brk",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_sort",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_alt",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "mapcolor7",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "mapcolor8",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "mapcolor9",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "mapcolor13",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "pop_est",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "pop_rank",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "gdp_md_est",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "pop_year",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "lastcensus",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "gdp_year",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "economy",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "income_grp",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "wikipedia",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "fips_10_",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "iso_a2",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "iso_a3",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "iso_a3_eh",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "iso_n3",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "un_a3",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "wb_a2",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "wb_a3",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "woe_id",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "woe_id_eh",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "woe_note",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "adm0_a3_is",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "adm0_a3_us",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "adm0_a3_un",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "adm0_a3_wb",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "continent",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "region_un",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "subregion",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "region_wb",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_len",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "long_len",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "abbrev_len",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "tiny",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "homepart",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "min_zoom",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "min_label",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "max_label",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "ne_id",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "wikidataid",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_ar",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_bn",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_de",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_en",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_es",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_fr",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_el",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_hi",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_hu",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_id",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_it",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_ja",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_ko",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_nl",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_pl",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_pt",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_ru",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_sv",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_tr",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_vi",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_zh",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          }
+        ],
+        "jointables": {},
+        "geometry": {
+          "geometry_column": "wkb_geometry",
+          "geometry_type": "MULTIPOLYGON",
+          "srid": 3857
+        }
+      },
+      {
+        "name": "pg/qgisprojects/qwc_demo.country_names",
+        "db_url": "postgresql:///?service=qwc_geodb",
+        "schema": "qwc_geodb",
+        "datasource_filter": null,
+        "table_name": "ne_10m_admin_0_country_points",
+        "primary_key": "ogc_fid",
+        "fields": [
+          {
+            "name": "ogc_fid",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": true,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "scalerank",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "labelrank",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "z_postal",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "z_abbrev",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "z_name",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "z_admin",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "featurecla",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 30,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "sovereignt",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 32,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "sov_a3",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 3,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "adm0_dif",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "level",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "type",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 17,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "admin",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 36,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "adm0_a3",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 3,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "geou_dif",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 26,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "abbrev",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 13,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "postal",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 4,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_forma",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 53,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "terr_",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 32,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_sort",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 43,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "map_color",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "pop_est",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "gdp_md_est",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "fips_10_",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "iso_a2",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 3,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "iso_a3",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 3,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "iso_n3",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          }
+        ],
+        "jointables": {},
+        "geometry": {
+          "geometry_column": "wkb_geometry",
+          "geometry_type": "POINT",
+          "srid": 3857
+        }
+      },
+      {
+        "name": "pg/qgisprojects/qwc_demo.edit_lines",
+        "db_url": "postgresql:///?service=qwc_geodb",
+        "schema": "qwc_geodb",
+        "datasource_filter": null,
+        "table_name": "edit_lines",
+        "primary_key": "id",
+        "fields": [
+          {
+            "name": "id",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "readOnly": true,
+              "expression": "",
+              "hidden": true
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 32,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "description",
+            "data_type": "text",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": true
+            },
+            "joinfield": null
+          },
+          {
+            "name": "num",
+            "data_type": "integer",
+            "constraints": {
+              "min": 0,
+              "max": 10000,
+              "required": false,
+              "expression": "",
+              "step": 1,
+              "prec": 0
+            },
+            "joinfield": null
+          },
+          {
+            "name": "value",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "type",
+            "data_type": "smallint",
+            "constraints": {
+              "min": -32768,
+              "max": 32767,
+              "required": false,
+              "expression": "",
+              "values": [
+                {
+                  "label": "Type A",
+                  "value": "0"
+                },
+                {
+                  "label": "Type B",
+                  "value": "1"
+                },
+                {
+                  "label": "Type C",
+                  "value": "2"
+                }
+              ]
+            },
+            "joinfield": null
+          },
+          {
+            "name": "amount",
+            "data_type": "numeric",
+            "constraints": {
+              "numeric_precision": 5,
+              "numeric_scale": 2,
+              "min": -999.99,
+              "max": 999.99,
+              "step": 0.01,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "validated",
+            "data_type": "boolean",
+            "constraints": {
+              "required": false,
+              "expression": ""
+            },
+            "joinfield": null
+          },
+          {
+            "name": "datetime",
+            "data_type": "timestamp without time zone",
+            "constraints": {
+              "required": false,
+              "expression": ""
+            },
+            "joinfield": null
+          }
+        ],
+        "jointables": {},
+        "geometry": {
+          "geometry_column": "geom",
+          "geometry_type": "LINESTRING",
+          "srid": 3857
+        }
+      },
+      {
+        "name": "pg/qgisprojects/qwc_demo.edit_points",
+        "db_url": "postgresql:///?service=qwc_geodb",
+        "schema": "qwc_geodb",
+        "datasource_filter": null,
+        "table_name": "edit_points",
+        "primary_key": "id",
+        "fields": [
+          {
+            "name": "id",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "readOnly": true,
+              "expression": "",
+              "hidden": true
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 32,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "description",
+            "data_type": "text",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": true
+            },
+            "joinfield": null
+          },
+          {
+            "name": "num",
+            "data_type": "integer",
+            "constraints": {
+              "min": 0,
+              "max": 10000,
+              "required": false,
+              "expression": "",
+              "step": 1,
+              "prec": 0
+            },
+            "joinfield": null
+          },
+          {
+            "name": "value",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "type",
+            "data_type": "smallint",
+            "constraints": {
+              "min": -32768,
+              "max": 32767,
+              "required": false,
+              "expression": "",
+              "values": [
+                {
+                  "label": "Type A",
+                  "value": "0"
+                },
+                {
+                  "label": "Type B",
+                  "value": "1"
+                },
+                {
+                  "label": "Type C",
+                  "value": "2"
+                }
+              ]
+            },
+            "joinfield": null
+          },
+          {
+            "name": "amount",
+            "data_type": "numeric",
+            "constraints": {
+              "numeric_precision": 5,
+              "numeric_scale": 2,
+              "min": -999.99,
+              "max": 999.99,
+              "step": 0.01,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "validated",
+            "data_type": "boolean",
+            "constraints": {
+              "required": false,
+              "expression": ""
+            },
+            "joinfield": null
+          },
+          {
+            "name": "datetime",
+            "data_type": "timestamp without time zone",
+            "constraints": {
+              "required": false,
+              "expression": ""
+            },
+            "joinfield": null
+          }
+        ],
+        "jointables": {},
+        "geometry": {
+          "geometry_column": "geom",
+          "geometry_type": "POINT",
+          "srid": 3857
+        }
+      },
+      {
+        "name": "pg/qgisprojects/qwc_demo.edit_polygons",
+        "db_url": "postgresql:///?service=qwc_geodb",
+        "schema": "qwc_geodb",
+        "datasource_filter": null,
+        "table_name": "edit_polygons",
+        "primary_key": "id",
+        "fields": [
+          {
+            "name": "id",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "readOnly": true,
+              "expression": "",
+              "hidden": true
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 32,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "description",
+            "data_type": "text",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": true
+            },
+            "joinfield": null
+          },
+          {
+            "name": "num",
+            "data_type": "integer",
+            "constraints": {
+              "min": 0,
+              "max": 10000,
+              "required": false,
+              "expression": "",
+              "step": 1,
+              "prec": 0
+            },
+            "joinfield": null
+          },
+          {
+            "name": "value",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "type",
+            "data_type": "smallint",
+            "constraints": {
+              "min": -32768,
+              "max": 32767,
+              "required": false,
+              "expression": "",
+              "values": [
+                {
+                  "label": "Type A",
+                  "value": "0"
+                },
+                {
+                  "label": "Type B",
+                  "value": "1"
+                },
+                {
+                  "label": "Type C",
+                  "value": "2"
+                }
+              ]
+            },
+            "joinfield": null
+          },
+          {
+            "name": "amount",
+            "data_type": "numeric",
+            "constraints": {
+              "numeric_precision": 5,
+              "numeric_scale": 2,
+              "min": -999.99,
+              "max": 999.99,
+              "step": 0.01,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "validated",
+            "data_type": "boolean",
+            "constraints": {
+              "required": false,
+              "expression": ""
+            },
+            "joinfield": null
+          },
+          {
+            "name": "datetime",
+            "data_type": "timestamp without time zone",
+            "constraints": {
+              "required": false,
+              "expression": ""
+            },
+            "joinfield": null
+          }
+        ],
+        "jointables": {},
+        "geometry": {
+          "geometry_column": "geom",
+          "geometry_type": "POLYGON",
+          "srid": 3857
+        }
+      },
+      {
+        "name": "pg/qgisprojects/qwc_demo.geographic_lines",
+        "db_url": "postgresql:///?service=qwc_geodb",
+        "schema": "qwc_geodb",
+        "datasource_filter": "\"featurecla\" = 'Circle of latitude'",
+        "table_name": "ne_10m_geographic_lines",
+        "primary_key": "ogc_fid",
+        "fields": [
+          {
+            "name": "ogc_fid",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": true,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "scalerank",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_long",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "abbrev",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "note",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "featurecla",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "min_zoom",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "wikidataid",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_ar",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_bn",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_de",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_en",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_es",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_fr",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_el",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_hi",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_hu",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_id",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_it",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_ja",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_ko",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_nl",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_pl",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_pt",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_ru",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_sv",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_tr",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_vi",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_zh",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "wdid_score",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "ne_id",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          }
+        ],
+        "jointables": {},
+        "geometry": {
+          "geometry_column": "wkb_geometry",
+          "geometry_type": "MULTILINESTRING",
+          "srid": 3857
+        }
+      },
+      {
+        "name": "pg/qgisprojects/qwc_demo.inscricao_cadastral",
+        "db_url": "postgresql:///?service=GeoCurvelo",
+        "schema": "curvelo",
+        "datasource_filter": null,
+        "table_name": "inscricao_cadastral",
+        "primary_key": "id",
+        "fields": [
+          {
+            "name": "id",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": true,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "inscricao",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 30,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "codigo_imov",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 30,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "cod_proprie",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "proprietari",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 150,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "cod_trclog",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "cd_logradou",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "log_nome",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 150,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "numero_imov",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 20,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "emplacament",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "complemento",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 100,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "quadra",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 10,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "lote",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 10,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "edificio",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 100,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "bloco",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "andar",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 20,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "apto",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 10,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "cep_imovel",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 10,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "cod_bairro",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "bairro_imov",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 150,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "zona",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 150,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "setor",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 150,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "distrito",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 150,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "loteamento",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 150,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "cod_zoneame",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "cod_zonea01",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "sigla",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 10,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "descricao",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 100,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "cod_comprom",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "compromissa",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 150,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "cpf_cnpj",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 30,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "rg",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 30,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "aposentado",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "email",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 150,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "end_prop_lo",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 150,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "end_prop_nu",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 20,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "end_prop_co",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 100,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "end_prop_ed",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 100,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "end_prop_bl",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "end_prop_an",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 20,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "end_prop_ap",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 10,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "end_prop_ba",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 150,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "end_prop_ce",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 10,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "end_prop_ci",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 100,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "end_prop_uf",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 2,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "secao",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 10,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "lado",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 10,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "isento_iptu",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "possui_habi",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "possui_escr",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "sobrado",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "qtde_constr",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "utilizacao",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "propriedade",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "classificac",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "qtde_pavime",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "pedologia",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "topografia",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "pavimentaca",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "agua",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "luz",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "esgoto",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "viela_sanit",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "guia",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "sarjeta",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "calcada",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "geminada",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "muro",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "situacao_lo",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "ano_constru",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "formato",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "tp_red_arbo",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "tp_red_app",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "tp_red_ared",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "conservacao",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "acabamento_",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "esquadrias_",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "revestiment",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "revestime01",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "fachada_edf",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "piso_edf",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "cobertura_e",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "forro_edf",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "estrutura_e",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "posicao_edf",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "alinhamento",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "localizacao",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "instalacao_",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "instalaca01",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "especie_edf",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "sublote",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "em_construc",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "taxa_ocupac",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "indice_apro",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "taxa_imperm",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "foto_ocupac",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 30,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "foto_tipo_e",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 30,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "foto_constr",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "foto_guia",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "foto_calcad",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "foto_pavime",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 30,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "foto_gemina",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "foto_muro",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "foto_grade",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "foto_cerca",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "foto_classi",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 15,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "foto_comple",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 254,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "qtde_testad",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "testada_pri",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "testada2",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "testada3",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "testada4",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "profundidad",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "area_terren",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "area_terr01",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "area_edif_p",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "area_edif_g",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "area_edif_d",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "area_edif01",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "area_total_",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "area_tota01",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "area_tota02",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "fracao_idea",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "valor_venal",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "valor_ven01",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "categoria_v",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "categoria01",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 50,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "valor_metro",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "valor_met01",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "aliquota_ip",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "aliquota_01",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "desconto_ip",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "acrescimo_i",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "valor_pago_",
+            "data_type": "numeric",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "qtde_pontos",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "ano_inicio_",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "cod_lotef",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "uid_lote_ge",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "insc_cad",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 30,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "insc_cad_fo",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "insc_cad_pa",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "insc_cad_qu",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "insc_cad_lo",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "insc_cad_un",
+            "data_type": "bigint",
+            "constraints": {
+              "min": -9223372036854775808,
+              "max": 9223372036854775807,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "data_cadast",
+            "data_type": "date",
+            "constraints": {
+              "required": false,
+              "expression": ""
+            },
+            "joinfield": null
+          },
+          {
+            "name": "data_cada01",
+            "data_type": "date",
+            "constraints": {
+              "required": false,
+              "expression": ""
+            },
+            "joinfield": null
+          },
+          {
+            "name": "cadastrado",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "ativo",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 1,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "observacoes",
+            "data_type": "character varying",
+            "constraints": {
+              "maxlength": 250,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          }
+        ],
+        "jointables": {},
+        "geometry": {
+          "geometry_column": "geom",
+          "geometry_type": "POINT",
+          "srid": 31983
+        }
+      },
+      {
+        "name": "pg/qgisprojects/qwc_demo.states_provinces",
+        "db_url": "postgresql:///?service=qwc_geodb",
+        "schema": "qwc_geodb",
+        "datasource_filter": null,
+        "table_name": "ne_10m_admin_1_states_provinces_lines",
+        "primary_key": "ogc_fid",
+        "fields": [
+          {
+            "name": "ogc_fid",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": true,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "featurecla",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "adm0_a3",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "adm0_name",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "shape_leng",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "mapcolor13",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "mapcolor9",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "sov_a3",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_l",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_r",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_alt_l",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_alt_r",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_loc_l",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_loc_r",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_len_l",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "name_len_r",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "note",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "type",
+            "data_type": "character varying",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "min_zoom",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "min_label",
+            "data_type": "double precision",
+            "constraints": {
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          },
+          {
+            "name": "scalerank",
+            "data_type": "integer",
+            "constraints": {
+              "min": -2147483648,
+              "max": 2147483647,
+              "required": false,
+              "expression": "",
+              "multiline": false
+            },
+            "joinfield": null
+          }
+        ],
+        "jointables": {},
+        "geometry": {
+          "geometry_column": "wkb_geometry",
+          "geometry_type": "MULTILINESTRING",
+          "srid": 3857
+        }
+      }
+    ]
   }
 }

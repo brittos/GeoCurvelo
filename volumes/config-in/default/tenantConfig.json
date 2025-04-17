@@ -75,14 +75,14 @@
         "config": {
         "queries": [
           {
-            "db_url": "postgresql:///?service=qwc_geodb",
+            "db_url": "postgresql:///?service=GeoCurvelo",
             "info_display_col": "name",
             "info_geom_col": "wkb_geometry",
             "info_table": "qwc_geodb.ne_10m_admin_0_countries",
             "info_title": "Country"
           },
           {
-            "db_url": "postgresql:///?service=qwc_geodb",
+            "db_url": "postgresql:///?service=GeoCurvelo",
             "info_sql": "SELECT type FROM qwc_geodb.ne_10m_admin_0_countries WHERE ST_contains(wkb_geometry, ST_SetSRID(ST_Point(:x, :y), :srid)) LIMIT 1",
             "info_title": "Type"
           }
@@ -145,7 +145,7 @@
     {
       "name": "search",
       "config": {
-        "db_url": "postgresql:///?service=qwc_geodb",
+        "db_url": "postgresql:///?service=GeoCurvelo",
         "search_backend": "solr",
         "search_result_limit": 50,
         "solr_service_url": "http://qwc-solr:8983/solr/gdi/select"
