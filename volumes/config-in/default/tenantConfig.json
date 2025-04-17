@@ -8,6 +8,7 @@
     "generate_nested_nrel_forms": false,
     "generate_wfs_services": false,
     "permissions_default_allow": true,
+    "qgis_project_extension": ".qgz",
     "qgis_projects_base_dir": "/data",
     "qgis_projects_scan_base_dir": "/data/scan",
     "strip_scan_prefix_from_theme_names": true,

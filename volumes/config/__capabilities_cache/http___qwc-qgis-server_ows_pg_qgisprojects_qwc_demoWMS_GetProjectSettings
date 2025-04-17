@@ -1,0 +1,609 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:qgs="http://www.qgis.org/wms" xmlns:sld="http://www.opengis.net/sld" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wms http://schemas.opengis.net/wms/1.3.0/capabilities_1_3_0.xsd http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/sld_capabilities.xsd http://www.qgis.org/wms http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?SERVICE=WMS&amp;REQUEST=GetSchemaExtension" version="1.3.0">
+ <Service>
+  <Name>WMS</Name>
+  <Title>QWC Demo</Title>
+  <Abstract>This a demo project for the QGIS Web Client</Abstract>
+  <KeywordList>
+   <Keyword vocabulary="ISO">infoMapAccessService</Keyword>
+   <Keyword>qwc</Keyword>
+   <Keyword>demo</Keyword>
+  </KeywordList>
+  <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo" />
+  <ContactInformation>
+   <ContactPersonPrimary>
+    <ContactPerson>unknown</ContactPerson>
+    <ContactOrganization>Sourcepole AG</ContactOrganization>
+   </ContactPersonPrimary>
+  </ContactInformation>
+  <Fees>conditions unknown</Fees>
+  <AccessConstraints>None</AccessConstraints>
+ </Service>
+ <Capability>
+  <Request>
+   <GetCapabilities>
+    <Format>text/xml</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?" />
+      </Get>
+     </HTTP>
+    </DCPType>
+   </GetCapabilities>
+   <GetMap>
+    <Format>image/jpeg</Format>
+    <Format>image/png</Format>
+    <Format>image/png; mode=16bit</Format>
+    <Format>image/png; mode=8bit</Format>
+    <Format>image/png; mode=1bit</Format>
+    <Format>application/dxf</Format>
+    <Format>application/pdf</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?" />
+      </Get>
+     </HTTP>
+    </DCPType>
+   </GetMap>
+   <GetFeatureInfo>
+    <Format>text/plain</Format>
+    <Format>text/html</Format>
+    <Format>text/xml</Format>
+    <Format>application/vnd.ogc.gml</Format>
+    <Format>application/vnd.ogc.gml/3.1.1</Format>
+    <Format>application/json</Format>
+    <Format>application/geo+json</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?" />
+      </Get>
+     </HTTP>
+    </DCPType>
+   </GetFeatureInfo>
+   <sld:GetLegendGraphic>
+    <Format>image/jpeg</Format>
+    <Format>image/png</Format>
+    <Format>application/json</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?" />
+      </Get>
+     </HTTP>
+    </DCPType>
+   </sld:GetLegendGraphic>
+   <sld:DescribeLayer>
+    <Format>text/xml</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?" />
+      </Get>
+     </HTTP>
+    </DCPType>
+   </sld:DescribeLayer>
+   <qgs:GetStyles>
+    <Format>text/xml</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?" />
+      </Get>
+     </HTTP>
+    </DCPType>
+   </qgs:GetStyles>
+   <GetPrint>
+    <Format>svg</Format>
+    <Format>png</Format>
+    <Format>pdf</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?" />
+      </Get>
+     </HTTP>
+    </DCPType>
+   </GetPrint>
+  </Request>
+  <Exception>
+   <Format>XML</Format>
+  </Exception>
+  <sld:UserDefinedSymbolization SupportSLD="1" UserStyle="1" RemoteWCS="0" UserLayer="0" InlineFeature="0" RemoteWFS="0" />
+  <ComposerTemplates>
+   <ComposerTemplate width="297" height="210" atlasCoverageLayer="countries" name="A4 Landscape" atlasEnabled="1">
+    <ComposerMap width="220" itemName="Map 1" height="190" name="map0" />
+    <ComposerLabel name="user_text" />
+   </ComposerTemplate>
+  </ComposerTemplates>
+  <Layer queryable="1">
+   <Name>qwc_demo</Name>
+   <Title>QWC Demo</Title>
+   <Abstract>This a demo project for the QGIS Web Client</Abstract>
+   <KeywordList>
+    <Keyword vocabulary="ISO">infoMapAccessService</Keyword>
+    <Keyword>qwc</Keyword>
+    <Keyword>demo</Keyword>
+   </KeywordList>
+   <CRS>CRS:84</CRS>
+   <CRS>EPSG:4326</CRS>
+   <CRS>EPSG:3857</CRS>
+   <EX_GeographicBoundingBox>
+    <westBoundLongitude>-179.999996</westBoundLongitude>
+    <eastBoundLongitude>179.999996</eastBoundLongitude>
+    <southBoundLatitude>-89</southBoundLatitude>
+    <northBoundLatitude>89</northBoundLatitude>
+   </EX_GeographicBoundingBox>
+   <BoundingBox maxx="20037507.843" CRS="EPSG:3857" maxy="30240971.459" miny="-30240971.459" minx="-20037507.843" />
+   <BoundingBox maxx="89" CRS="EPSG:4326" maxy="179.999996" miny="-179.999996" minx="-89" />
+   <TreeName>QWC Services Demo WMS</TreeName>
+   <Layer mutuallyExclusive="0" queryable="1" visibilityChecked="1" visible="1" expanded="1">
+    <Name>edit_demo</Name>
+    <Title>Edit Demo</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3857</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-179.999996</westBoundLongitude>
+     <eastBoundLongitude>179.999996</eastBoundLongitude>
+     <southBoundLatitude>-89</southBoundLatitude>
+     <northBoundLatitude>89</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox maxx="20037507.843" CRS="EPSG:3857" maxy="30240971.459" miny="-30240971.459" minx="-20037507.843" />
+    <BoundingBox maxx="89" CRS="EPSG:4326" maxy="179.999996" miny="-179.999996" minx="-89" />
+    <TreeName>Edit Demo</TreeName>
+    <Layer queryable="1" visibilityChecked="1" opacity="1" visible="1" expanded="1" displayField="Name" geometryType="Point">
+     <Name>edit_points</Name>
+     <Title>Edit Points</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>-179.999996</westBoundLongitude>
+      <eastBoundLongitude>179.999996</eastBoundLongitude>
+      <southBoundLatitude>-89</southBoundLatitude>
+      <northBoundLatitude>89</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox maxx="20037507.843" CRS="EPSG:3857" maxy="30240971.459" miny="-30240971.459" minx="-20037507.843" />
+     <BoundingBox maxx="89" CRS="EPSG:4326" maxy="179.999996" miny="-179.999996" minx="-89" />
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=edit_points&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0" />
+      </LegendURL>
+     </Style>
+     <TreeName>Edit Points</TreeName>
+     <PrimaryKey>
+      <PrimaryKeyAttribute>id</PrimaryKeyAttribute>
+     </PrimaryKey>
+     <Attributes>
+      <Attribute editType="Hidden" precision="0" type="int" typeName="int4" name="id" comment="" length="-1" />
+      <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name" comment="" length="32" alias="Name" />
+      <Attribute editType="TextEdit" precision="0" type="QString" typeName="text" name="description" comment="" length="-1" alias="Description" />
+      <Attribute editType="Range" precision="0" type="int" typeName="int4" name="num" comment="" length="-1" alias="Number" />
+      <Attribute editType="TextEdit" precision="0" type="double" typeName="float8" name="value" comment="" length="-1" />
+      <Attribute editType="ValueMap" precision="0" type="int" typeName="int2" name="type" comment="" length="-1" alias="Type" />
+      <Attribute editType="TextEdit" precision="2" type="double" typeName="numeric" name="amount" comment="" length="5" />
+      <Attribute editType="CheckBox" precision="0" type="bool" typeName="bool" name="validated" comment="" length="-1" alias="Validated" />
+      <Attribute editType="DateTime" precision="0" type="QDateTime" typeName="timestamp" name="datetime" comment="" length="-1" alias="Date" />
+     </Attributes>
+    </Layer>
+    <Layer queryable="1" visibilityChecked="1" opacity="1" visible="1" expanded="1" displayField="Name" geometryType="LineString">
+     <Name>edit_lines</Name>
+     <Title>Edit Lines</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>8.542115</westBoundLongitude>
+      <eastBoundLongitude>8.542278</eastBoundLongitude>
+      <southBoundLatitude>47.377069</southBoundLatitude>
+      <northBoundLatitude>47.377544</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox maxx="950922" CRS="EPSG:3857" maxy="6003918" miny="6003840" minx="950904" />
+     <BoundingBox maxx="47.377544" CRS="EPSG:4326" maxy="8.542278" miny="8.542115" minx="47.377069" />
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=edit_lines&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0" />
+      </LegendURL>
+     </Style>
+     <TreeName>Edit Lines</TreeName>
+     <PrimaryKey>
+      <PrimaryKeyAttribute>id</PrimaryKeyAttribute>
+     </PrimaryKey>
+     <Attributes>
+      <Attribute editType="Hidden" precision="0" type="int" typeName="int4" name="id" comment="" length="-1" />
+      <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name" comment="" length="32" alias="Name" />
+      <Attribute editType="TextEdit" precision="0" type="QString" typeName="text" name="description" comment="" length="-1" alias="Description" />
+      <Attribute editType="Range" precision="0" type="int" typeName="int4" name="num" comment="" length="-1" alias="Number" />
+      <Attribute editType="TextEdit" precision="0" type="double" typeName="float8" name="value" comment="" length="-1" />
+      <Attribute editType="ValueMap" precision="0" type="int" typeName="int2" name="type" comment="" length="-1" alias="Type" />
+      <Attribute editType="TextEdit" precision="2" type="double" typeName="numeric" name="amount" comment="" length="5" />
+      <Attribute editType="CheckBox" precision="0" type="bool" typeName="bool" name="validated" comment="" length="-1" alias="Validated" />
+      <Attribute editType="DateTime" precision="0" type="QDateTime" typeName="timestamp" name="datetime" comment="" length="-1" alias="Date" />
+     </Attributes>
+    </Layer>
+    <Layer queryable="1" visibilityChecked="1" opacity="1" visible="1" expanded="1" displayField="Name" geometryType="Polygon">
+     <Name>edit_polygons</Name>
+     <Title>Edit Polygons</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>8.541217</westBoundLongitude>
+      <eastBoundLongitude>8.541461</eastBoundLongitude>
+      <southBoundLatitude>47.377464</southBoundLatitude>
+      <northBoundLatitude>47.377751</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox maxx="950831" CRS="EPSG:3857" maxy="6003952" miny="6003905" minx="950804" />
+     <BoundingBox maxx="47.377751" CRS="EPSG:4326" maxy="8.541461" miny="8.541217" minx="47.377464" />
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=edit_polygons&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0" />
+      </LegendURL>
+     </Style>
+     <TreeName>Edit Polygons</TreeName>
+     <PrimaryKey>
+      <PrimaryKeyAttribute>id</PrimaryKeyAttribute>
+     </PrimaryKey>
+     <Attributes>
+      <Attribute editType="Hidden" precision="0" type="int" typeName="int4" name="id" comment="" length="-1" />
+      <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name" comment="" length="32" alias="Name" />
+      <Attribute editType="TextEdit" precision="0" type="QString" typeName="text" name="description" comment="" length="-1" alias="Description" />
+      <Attribute editType="Range" precision="0" type="int" typeName="int4" name="num" comment="" length="-1" alias="Number" />
+      <Attribute editType="TextEdit" precision="0" type="double" typeName="float8" name="value" comment="" length="-1" />
+      <Attribute editType="ValueMap" precision="0" type="int" typeName="int2" name="type" comment="" length="-1" alias="Type" />
+      <Attribute editType="TextEdit" precision="2" type="double" typeName="numeric" name="amount" comment="" length="5" />
+      <Attribute editType="CheckBox" precision="0" type="bool" typeName="bool" name="validated" comment="" length="-1" alias="Validated" />
+      <Attribute editType="DateTime" precision="0" type="QDateTime" typeName="timestamp" name="datetime" comment="" length="-1" alias="Date" />
+     </Attributes>
+    </Layer>
+   </Layer>
+   <Layer queryable="1" visibilityChecked="1" opacity="1" visible="1" expanded="1" displayField="name" geometryType="MultiLineString">
+    <Name>geographic_lines</Name>
+    <Title>Geographic lines</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3857</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-180</westBoundLongitude>
+     <eastBoundLongitude>179.999997</eastBoundLongitude>
+     <southBoundLatitude>-66.549927</southBoundLatitude>
+     <northBoundLatitude>66.549986</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox maxx="20037507.921" CRS="EPSG:3857" maxy="10029019.734" miny="-10029003.188" minx="-20037508.343" />
+    <BoundingBox maxx="66.549986" CRS="EPSG:4326" maxy="179.999997" miny="-180" minx="-66.549927" />
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=geographic_lines&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0" />
+     </LegendURL>
+    </Style>
+    <TreeName>Geographic lines</TreeName>
+    <PrimaryKey>
+     <PrimaryKeyAttribute>ogc_fid</PrimaryKeyAttribute>
+    </PrimaryKey>
+    <Attributes>
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="ogc_fid" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="qlonglong" typeName="int8" name="scalerank" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_long" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="abbrev" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="note" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="featurecla" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="double" typeName="float8" name="min_zoom" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="wikidataid" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_ar" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_bn" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_de" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_en" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_es" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_fr" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_el" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_hi" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_hu" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_id" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_it" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_ja" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_ko" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_nl" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_pl" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_pt" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_ru" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_sv" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_tr" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_vi" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_zh" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="wdid_score" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="qlonglong" typeName="int8" name="ne_id" comment="" length="-1" />
+    </Attributes>
+   </Layer>
+   <Layer queryable="1" visibilityChecked="1" opacity="1" visible="1" expanded="1" displayField="z_name" geometryType="Point">
+    <Name>country_names</Name>
+    <Title>Country names</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3857</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-177.22902</westBoundLongitude>
+     <eastBoundLongitude>178.519895</eastBoundLongitude>
+     <southBoundLatitude>-80.516568</southBoundLatitude>
+     <northBoundLatitude>73.34887</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox maxx="19872743.797" CRS="EPSG:3857" maxy="12257650.088" miny="-15878634.349" minx="-19729044.152" />
+    <BoundingBox maxx="73.34887" CRS="EPSG:4326" maxy="178.519895" miny="-177.22902" minx="-80.516568" />
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=country_names&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0" />
+     </LegendURL>
+    </Style>
+    <MinScaleDenominator>0</MinScaleDenominator>
+    <MaxScaleDenominator>10000000</MaxScaleDenominator>
+    <TreeName>Country names</TreeName>
+    <PrimaryKey>
+     <PrimaryKeyAttribute>ogc_fid</PrimaryKeyAttribute>
+    </PrimaryKey>
+    <Attributes>
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="ogc_fid" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="scalerank" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="labelrank" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="qlonglong" typeName="int8" name="z_postal" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="qlonglong" typeName="int8" name="z_abbrev" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="qlonglong" typeName="int8" name="z_name" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="qlonglong" typeName="int8" name="z_admin" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="featurecla" comment="" length="30" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="sovereignt" comment="" length="32" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="sov_a3" comment="" length="3" />
+     <Attribute editType="TextEdit" precision="0" type="double" typeName="float8" name="adm0_dif" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="double" typeName="float8" name="level" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="type" comment="" length="17" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="admin" comment="" length="36" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="adm0_a3" comment="" length="3" />
+     <Attribute editType="TextEdit" precision="0" type="double" typeName="float8" name="geou_dif" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name" comment="" length="26" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="abbrev" comment="" length="13" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="postal" comment="" length="4" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_forma" comment="" length="53" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="terr_" comment="" length="32" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_sort" comment="" length="43" />
+     <Attribute editType="TextEdit" precision="0" type="double" typeName="float8" name="map_color" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="double" typeName="float8" name="pop_est" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="double" typeName="float8" name="gdp_md_est" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="double" typeName="float8" name="fips_10_" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="iso_a2" comment="" length="3" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="iso_a3" comment="" length="3" />
+     <Attribute editType="TextEdit" precision="0" type="double" typeName="float8" name="iso_n3" comment="" length="-1" />
+    </Attributes>
+   </Layer>
+   <Layer queryable="1" visibilityChecked="1" opacity="1" visible="1" expanded="1" displayField="name" geometryType="MultiLineString">
+    <Name>states_provinces</Name>
+    <Title>States and Provinces</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3857</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-178.137086</westBoundLongitude>
+     <eastBoundLongitude>178.448623</eastBoundLongitude>
+     <southBoundLatitude>-49.250871</southBoundLatitude>
+     <northBoundLatitude>81.128532</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox maxx="19864809.764" CRS="EPSG:3857" maxy="16305918.535" miny="-6317536.49" minx="-19830129.665" />
+    <BoundingBox maxx="81.128532" CRS="EPSG:4326" maxy="178.448623" miny="-178.137086" minx="-49.250871" />
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=states_provinces&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0" />
+     </LegendURL>
+    </Style>
+    <MinScaleDenominator>0</MinScaleDenominator>
+    <MaxScaleDenominator>5000000</MaxScaleDenominator>
+    <TreeName>States and Provinces</TreeName>
+    <PrimaryKey>
+     <PrimaryKeyAttribute>ogc_fid</PrimaryKeyAttribute>
+    </PrimaryKey>
+    <Attributes>
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="featurecla" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="adm0_a3" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="adm0_name" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="sov_a3" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_l" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_r" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_alt_l" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_alt_r" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_loc_l" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_loc_r" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="name_len_l" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="name_len_r" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="note" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="type" comment="" length="-1" />
+    </Attributes>
+   </Layer>
+   <Layer queryable="1" visibilityChecked="1" opacity="1" visible="1" expanded="1" displayField="name" geometryType="MultiPolygon">
+    <Name>countries</Name>
+    <Title>Countries</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3857</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-180</westBoundLongitude>
+     <eastBoundLongitude>180</eastBoundLongitude>
+     <southBoundLatitude>-89.501386</southBoundLatitude>
+     <northBoundLatitude>83.634101</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox maxx="20037508.343" CRS="EPSG:3857" maxy="18428920.013" miny="-34679773.786" minx="-20037508.343" />
+    <BoundingBox maxx="83.634101" CRS="EPSG:4326" maxy="180" miny="-180" minx="-89.501386" />
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=countries&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0" />
+     </LegendURL>
+    </Style>
+    <TreeName>Countries</TreeName>
+    <PrimaryKey>
+     <PrimaryKeyAttribute>ogc_fid</PrimaryKeyAttribute>
+    </PrimaryKey>
+    <Attributes>
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="featurecla" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="sovereignt" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="sov_a3" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="adm0_dif" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="level" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="type" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="admin" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="adm0_a3" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="geou_dif" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="geounit" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="gu_a3" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="su_dif" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="subunit" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="su_a3" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="brk_diff" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_long" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="brk_a3" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="brk_name" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="brk_group" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="abbrev" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="postal" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="formal_en" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="formal_fr" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_ciawf" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="note_adm0" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="note_brk" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_sort" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_alt" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="qlonglong" typeName="int8" name="pop_est" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="pop_rank" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="double" typeName="float8" name="gdp_md_est" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="pop_year" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="lastcensus" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="gdp_year" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="economy" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="income_grp" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="wikipedia" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="fips_10_" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="iso_a2" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="iso_a3" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="iso_a3_eh" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="iso_n3" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="un_a3" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="wb_a2" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="wb_a3" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="woe_id" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="woe_id_eh" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="woe_note" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="adm0_a3_is" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="adm0_a3_us" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="adm0_a3_un" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="adm0_a3_wb" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="continent" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="region_un" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="subregion" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="region_wb" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="name_len" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="long_len" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="abbrev_len" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="tiny" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="int" typeName="int4" name="homepart" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="qlonglong" typeName="int8" name="ne_id" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="wikidataid" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_ar" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_bn" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_de" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_en" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_es" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_fr" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_el" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_hi" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_hu" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_id" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_it" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_ja" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_ko" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_nl" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_pl" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_pt" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_ru" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_sv" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_tr" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_vi" comment="" length="-1" />
+     <Attribute editType="TextEdit" precision="0" type="QString" typeName="varchar" name="name_zh" comment="" length="-1" />
+    </Attributes>
+   </Layer>
+   <Layer queryable="1" visibilityChecked="0" opacity="1" visible="0" expanded="1">
+    <Name>osm_bg</Name>
+    <Title>OpenStreetMap</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3857</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-180</westBoundLongitude>
+     <eastBoundLongitude>180</eastBoundLongitude>
+     <southBoundLatitude>-85.051129</southBoundLatitude>
+     <northBoundLatitude>85.051129</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox maxx="20037508.34" CRS="EPSG:3857" maxy="20037508.34" miny="-20037508.34" minx="-20037508.34" />
+    <BoundingBox maxx="85.051129" CRS="EPSG:4326" maxy="180" miny="-180" minx="-85.051129" />
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=osm_bg&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0" />
+     </LegendURL>
+    </Style>
+    <Attribution>
+     <Title>OpenStreetMap contributors</Title>
+     <OnlineResource xlink:type="simple" xlink:href="https://www.openstreetmap.org/copyright" />
+    </Attribution>
+    <TreeName>OpenStreetMap</TreeName>
+   </Layer>
+   <Layer queryable="1" visibilityChecked="0" opacity="1" visible="0" expanded="1">
+    <Name>bluemarble_bg</Name>
+    <Title>Blue Marble</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3857</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-179.999926</westBoundLongitude>
+     <eastBoundLongitude>179.999926</eastBoundLongitude>
+     <southBoundLatitude>-85.051123</southBoundLatitude>
+     <northBoundLatitude>85.051123</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox maxx="20037500" CRS="EPSG:3857" maxy="20037500" miny="-20037500" minx="-20037500" />
+    <BoundingBox maxx="85.051123" CRS="EPSG:4326" maxy="179.999926" miny="-179.999926" minx="-85.051123" />
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xlink:href="http://qwc-qgis-server/ows/pg/qgisprojects/qwc_demo?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=bluemarble_bg&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0" />
+     </LegendURL>
+    </Style>
+    <TreeName>Blue Marble</TreeName>
+    <WMSBackgroundLayer>0</WMSBackgroundLayer>
+   </Layer>
+  </Layer>
+  <LayerDrawingOrder>bluemarble_bg,osm_bg,countries,states_provinces,country_names,geographic_lines,edit_polygons,edit_lines,edit_points</LayerDrawingOrder>
+ </Capability>
+</WMS_Capabilities>
