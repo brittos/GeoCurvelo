@@ -13,6 +13,9 @@ if [ $LOCALE != 'en_US' ]; then
   export LC_ALL=${LOCALE}.UTF-8
 fi
 
+echo Updating fonts...
+fc-cache -f && fc-list | sort
+
 # Copy for processing
 cp /etc/apache2/templates/qgis-server.conf.template /tmp/qgis-server.conf.template
 echo "Substituting variables in template..."
@@ -35,12 +38,14 @@ rm /tmp/qgis-server.conf.template
 
 # Replace Port
 sed -i -e "s/Listen 80/Listen $PORT/" /etc/apache2/ports.conf
+apache2ctl configtest
 
-# Activate the Ubuntu Apache environment
 echo "Starting Apache2 server..."
+# Activate the Ubuntu Apache environment
 . /etc/apache2/envvars
 
 > $QGIS_SERVER_LOG_FILE
 tail -f $QGIS_SERVER_LOG_FILE > /proc/self/fd/2 &
+# Iniciar o Apache2 em primeiro plano
 exec /usr/sbin/apache2 -k start -DFOREGROUND &>> $QGIS_SERVER_LOG_FILE
 echo "Apache2 server started..."

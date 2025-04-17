@@ -25,8 +25,8 @@ RUN \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-    # Updating fonts
-RUN fc-cache -f -v && fc-list | sort
+# Running apache2 as non-root user requires the capability to bind to port 80
+RUN setcap 'cap_net_bind_service=+ep' /usr/sbin/apache2
 
 RUN locale-gen en_US.UTF-8 && update-locale
 ENV LOCALE en_US
@@ -45,8 +45,9 @@ RUN a2enmod rewrite && a2enmod cgi && a2enmod fcgid && a2enmod headers && \
     # Delete apache2 default site
     rm /etc/apache2/sites-enabled/000-default.conf
 
-ARG UID=33
+ARG UID=33 
 
+# Create a user with the same UID as the apache user
 RUN id $UID 2>/dev/null || useradd --system --uid $UID --create-home appuser
 
 RUN \
@@ -81,7 +82,7 @@ ENV FCGI_MAX_REQUESTLEN=26214400
 ENV FCGI_CONNECT_TIMEOUT=60
 # QWC2 specific variables
 ENV URL_PREFIX=/ows
-ENV QGIS_PROJECT_SUFFIX=qgs
+ENV QGIS_PROJECT_SUFFIX=qgz
 ENV DB_PROJECT_SERVICE=qgisprojects
 # QGIS Server specific variables
 ENV MAX_CACHE_LAYERS=500
@@ -113,7 +114,8 @@ ENV QGIS_SERVER_WMS_MAX_WIDTH=-1
 ENV QGIS_SERVER_WMS_SERVICE_URL=""
 ENV QGIS_SERVER_WMTS_SERVICE_URL=""
 ENV FCGID_EXTRA_ENV=""
-ENV PORT=7000
+# This is the port that will be used to access the QGIS server
+ENV PORT=80
 
 # Add apache config for QGIS server
 ADD qgis3-server.conf.template /etc/apache2/templates/qgis-server.conf.template
@@ -127,7 +129,7 @@ RUN chmod +x /entrypoint.sh
 
 USER $UID
 
-EXPOSE 80
+EXPOSE $PORT
 
 VOLUME ["/data"]
 
