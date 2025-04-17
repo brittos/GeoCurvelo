@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="90"
+   width="190"
    height="49.999996"
-   viewBox="0 0 23.812481 13.229166"
+   viewBox="0 0 50.270793 13.229166"
    version="1.1"
    id="svg8"
-   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
    sodipodi:docname="logo.svg"
    inkscape:export-filename="/home/hka/Documents/icons/qwc-demo-icon/qwc-log.png"
    inkscape:export-xdpi="328.32733"
@@ -79,16 +79,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="8.6"
-     inkscape:cx="44.651163"
-     inkscape:cy="33.197675"
+     inkscape:zoom="5.66"
+     inkscape:cx="82.508834"
+     inkscape:cy="33.127208"
      inkscape:document-units="mm"
-     inkscape:current-layer="g894"
+     inkscape:current-layer="g4183-6"
      showgrid="true"
      inkscape:window-width="1920"
-     inkscape:window-height="1172"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:measure-start="660.75,975.75"
      inkscape:measure-end="660.75,975.5"
@@ -96,7 +96,8 @@
      width="49px"
      inkscape:showpageshadow="2"
      inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1">
+     inkscape:deskcolor="#d1d1d1"
+     showguides="false">
     <inkscape:grid
        id="grid1"
        units="mm"
@@ -172,8 +173,8 @@
                    id="g894"
                    transform="translate(-54.571737,90.199296)">
                   <g
-                     style="stroke-width:3.85246"
-                     transform="matrix(0.08044659,0,0,0.08403277,151.82372,6.5783127)"
+                     style="display:inline;stroke-width:3.85246"
+                     transform="matrix(0.08044659,0,0,0.08403277,151.71534,6.5783127)"
                      id="g843">
                     <path
                        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#93b023;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:39.5863;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -281,25 +282,17 @@
                        inkscape:connector-curvature="0"
                        sodipodi:nodetypes="sscccccccccccccssccssccccc" />
                   </g>
-                  <g
-                     id="g1"
-                     transform="translate(0,3.7433526e-5)">
-                    <path
-                       id="path852"
-                       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.11742px;font-family:Trueno;-inkscape-font-specification:'Trueno, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#589632;fill-opacity:1;stroke-width:0.00702355"
-                       d="m 168.176,8.5463739 c 0,0.2246017 0.1732,0.3933323 0.40674,0.4011543 0.0514,0.1083899 0.14303,0.1754351 0.25142,0.1754351 0.0782,0 0.1665,-0.032405 0.22684,-0.086041 l -0.0704,-0.1229164 c -0.048,0.036875 -0.0983,0.059223 -0.13409,0.059223 -0.0357,0 -0.0682,-0.020114 -0.095,-0.053636 0.15644,-0.058106 0.26036,-0.2000184 0.26036,-0.3732187 0,-0.2268365 -0.18102,-0.3966846 -0.4235,-0.3966846 -0.24136,0 -0.42239,0.1687306 -0.42239,0.3966846 z m 0.20337,0.00112 c 0,-0.1318557 0.10057,-0.2313062 0.22125,-0.2313062 0.12068,0 0.21678,0.09945 0.21678,0.2313062 0,0.1318557 -0.0961,0.2335411 -0.21678,0.2335411 -0.11956,0 -0.22125,-0.1016854 -0.22125,-0.2335411 z"
-                       inkscape:connector-curvature="0" />
-                    <path
-                       id="path854"
-                       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.11742px;font-family:Trueno;-inkscape-font-specification:'Trueno, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#589632;fill-opacity:1;stroke-width:0.00702355"
-                       d="m 169.04874,8.1496148 0.25589,0.782195 h 0.20561 l 0.1475,-0.5408319 0.14526,0.5408319 h 0.20449 l 0.25813,-0.782195 h -0.20337 l -0.15086,0.5754721 -0.15308,-0.5754721 h -0.19443 l -0.14974,0.5754721 -0.15309,-0.5754721 z"
-                       inkscape:connector-curvature="0" />
-                    <path
-                       id="path856"
-                       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.11742px;font-family:Trueno;-inkscape-font-specification:'Trueno, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#589632;fill-opacity:1;stroke-width:0.00702355"
-                       d="m 170.27635,8.5451825 c 0,0.2290714 0.17544,0.4022717 0.41121,0.4022717 0.1151,0 0.23913,-0.056989 0.32294,-0.14303 l -0.11621,-0.1229163 c -0.0548,0.055871 -0.13074,0.091628 -0.19667,0.091628 -0.12403,0 -0.2179,-0.09945 -0.2179,-0.2301888 0,-0.1285034 0.0939,-0.2268365 0.2179,-0.2268365 0.0693,0 0.14527,0.03911 0.19667,0.1016853 l 0.11509,-0.1363254 c -0.0782,-0.080454 -0.1989,-0.1318557 -0.31511,-0.1318557 -0.23801,0 -0.41792,0.1698481 -0.41792,0.3955677 z"
-                       inkscape:connector-curvature="0" />
-                  </g>
+                  <text
+                     xml:space="preserve"
+                     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.1231px;line-height:1.35;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#589632;fill-opacity:1;stroke-width:0.00058862"
+                     x="167.87875"
+                     y="9.3843327"
+                     id="text1"><tspan
+                       sodipodi:role="line"
+                       id="tspan1"
+                       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.1231px;line-height:1.35;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#589632;fill-opacity:1;stroke-width:0.00058862"
+                       x="167.87875"
+                       y="9.3843327">GeoCurvelo</tspan></text>
                 </g>
               </g>
             </g>
