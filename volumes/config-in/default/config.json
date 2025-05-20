@@ -12,6 +12,7 @@
   "allowReorderingLayers":true,
   "preventSplittingGroupsWhenReordering":false,
   "globallyDisableDockableDialogs":false,
+  "defaultColorScheme": "dark",
   "searchThemes":true,
   "allowFractionalZoom":false,
   "localeAwareNumbers":false,
