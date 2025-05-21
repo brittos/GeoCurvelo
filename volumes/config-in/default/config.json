@@ -291,14 +291,6 @@
             {
               "titleMsgId":"colorschemes.dark",
               "value":"dark"
-            },
-            {
-              "titleMsgId":"colorschemes.default",
-              "value":"default"
-            },
-            {
-              "titleMsgId":"colorschemes.highcontrast",
-              "value":"highcontrast"
             }
           ]
         }
