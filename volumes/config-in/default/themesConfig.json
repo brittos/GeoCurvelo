@@ -22,7 +22,7 @@
                 "attribution": "Demo attribution",
                 "attributionUrl": "https://geocurvelo.curvelo.mg.gov.br/",
                 "backgroundLayers": [
-                    {"name": "google_satellite", "printLayer": "google_satellite_bg"},
+                    {"name": "google_satellite", "printLayer": "google_satellite_bg", "visibility": true},
                     {"name": "mapnik", "printLayer": "osm_bg", "visibility": true}
                 ],
                 "searchProviders": [
